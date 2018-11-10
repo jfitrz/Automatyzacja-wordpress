@@ -35,7 +35,7 @@
         state: started
     - name: "download wordpress"
       get_url:
-        url: https://pl.wordpress.org/wordpress-4.9.8-pl_PL.tar.gz
+        url: "{{wordpress_archive_url}}"
         dest: ~/wordpress.tar.gz
     - name: "unpack wordpress archive"
       unarchive: 
